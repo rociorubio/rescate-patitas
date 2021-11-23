@@ -1,0 +1,42 @@
+{{# partial "titulo" }}
+  <title>RescateDePatitas.com | Mascotas Perdidas</title>
+{{/partial}}
+
+{{# partial "contenido" }}
+<h1>Rescate De Patitas</h1>
+<h3 style="font-size:55px;color:#EC7D08;">Lista de Mascotas Perdidas</h3>
+<!--
+  <form style="text-align:center;">
+    <label>Buscar por nombre:</label>
+    <input name="filtro" placeholder="Ingrese un nombre" type="text">
+    <input type="submit" value="Buscar">
+  </form>
+-->
+  <div style="margin-left:600px;">
+  <table class="editCaract" style="margin: 15px;padding: 15px;border-collapse: separate;text-align:center;" width="60%">
+  <tr>
+    <td><b>Id</b></td>
+    <td><b>Tipo de Mascota</b></td>
+    <td><b>Tamaño de Mascota</b></td>
+    <td><b>Descripcion Mascota</b></td>
+    <td><b>Tiene Chapita?</b></td>
+  </tr>
+  {{#mascotasPerdidas}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{tipoMascota}}</td>
+        <td>{{tamanioMascota}}</td>
+        <td>{{descripcionFisica}}</td>
+        {{#if chapita}}
+        <td>{{chapita}}</td>
+        {{else}}
+        <td>NO</td>
+        {{/if}}
+    </tr>
+  {{/mascotasPerdidas}}
+  </table>
+</div>
+{{/partial}}
+
+{{> layout.html.hbs }}
+

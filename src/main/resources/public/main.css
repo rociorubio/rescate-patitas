@@ -1,0 +1,315 @@
+.redondo{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+  border-color: #2869D5;
+  color:#2869D5;
+}
+
+.redondo:hover{
+  background-color: rgba(40, 105, 213, 0.74);
+  color: #EC7D08;
+}
+
+.orden-boton{
+  display:flex;
+  justify-content:center;
+}
+
+.boton{
+  width:120px;
+  height:60px;
+  margin-left:25px;
+  margin-top:0;
+  color: white;
+}
+
+.naranja{
+  width:200px;
+  height:80px;
+  background-color:#EC7D08;
+  float: right;
+  margin-right:25px;
+  border-radius: 15px;
+  border-color: #EC7D08;
+}
+
+.naranja:hover{
+  color: #8d8989;
+  border-color: #8d8989;
+}
+
+.rojo{
+  background-color:#E82020;
+}
+
+h1{
+  font-family: "Verdana", serif;
+  color:#2869D5;
+  font-size:92px;
+  margin-top: -20px;
+  margin-left:25px;
+}
+
+h2{
+  font-family: "Verdana", sans-serif;
+  color:#EC7D08;
+  font-size:95px;
+  margin-top: 0;
+  margin-left: 25px;
+}
+
+h3{
+  font-family: "Verdana", sans-serif;
+  margin-left: 25px;
+}
+
+h4{
+  font-family: "Verdana", sans-serif;
+  margin-left: 25px;
+}
+
+label{
+  margin-left: 25px;
+}
+
+iframe{
+  margin-left: 25px;
+}
+
+p{
+  color:#34282C;
+  font-family: "Verdana", sans-serif;
+  font-size:27px;
+  margin-left:25px;
+}
+
+b{
+  font-family:"Verdana", serif;
+}
+
+a{
+  font-family:"Verdana", sans-serif;
+}
+
+.login{
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+  background: rgba(229, 224, 224, 0.82);
+  margin-left: 700px;
+  margin-right: 700px;
+  border-radius: 30px;
+}
+
+.centrado{
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.columnas{
+  display:flex;
+  justify-content: space-between;
+}
+
+.menu-principal{
+  align-items: center;
+  display:flex;
+  justify-content: space-between;
+}
+
+.menu-item{
+  margin:75px;
+  color:#2869D5;
+}
+
+.imagen-header{
+  left:-25px;
+}
+
+i{
+  font-size:35px;
+  color:white;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td {
+  margin: 25px;
+  padding: 10px;
+}
+
+.form{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.form label{
+  font-family:"Verdana", sans-serif;
+  font-size:25px;
+}
+
+.form input{
+  width: 90%;
+  height: 40px;
+  margin: 0.5rem;
+  align-content: center;
+  border-radius: 5px;
+  border-color: #dad5d5;
+}
+
+.form input:hover{
+  background: #cedef8;
+}
+
+.form button{
+  padding: 0.5em 1em;
+  border: none;
+  background: rgb(100, 200, 255);
+  cursor: pointer;
+}
+
+.sesion input{
+  font-family:"Verdana", sans-serif;
+  background-color: #cedef8;
+  font-size:20px;
+  width: 450px;
+  height: 50px;
+  border-radius: 5px;
+  border: #2c2929;
+}
+
+.cancelar{
+  width:120px;
+  height:60px;
+  background-color:#ec0808;
+  float:right;
+  border-radius: 15px;
+}
+
+.guardar{
+  width:220px;
+  height:60px;
+  background-color:#4EA7FF;
+  float:right;
+  margin-left: 900px;
+  margin-right: 145px;
+  border-radius: 15px;
+}
+
+.guardar:hover{
+  background-color: #EC7D08;
+  border-color: #8d8989;
+}
+
+.tabla input{
+  width: 450px;
+}
+
+.formulario {
+  background-image: url("https://thumbs.dreamstime.com/b/modelo-incons%C3%BAtil-del-vector-con-las-huellas-de-la-pata-gris-clara-138797533.jpg");
+  backdrop-filter: blur(10px);
+}
+
+.caracteristicas {
+  font-family:"Verdana", sans-serif;
+}
+
+.editCaract tr{
+  background-color: #f2f2f2;
+  justify-items: center;
+}
+
+.caractBody {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.nuevaCaractForm input{
+  width: 500px;
+  height: 30px;
+  margin: 0.5rem;
+  align-content: center;
+  border-radius: 5px;
+  border-color: #dad5d5;
+}
+
+.nuevaCaract {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.rechazar {
+  width:150px;
+  height: 40px;
+  background-color: #e10e0e;
+  border-radius: 5px;
+  border-color: #e10e0e;
+}
+
+.rechazar:hover{
+  background-color: #8d8989;
+  border-color: #2c2929;
+}
+
+.aceptar {
+  width:150px;
+  height: 40px;
+  margin-left:25px;
+  background-color: forestgreen;
+  border-radius: 5px;
+  border-color: forestgreen;
+}
+
+.aceptar:hover{
+  background-color: #8d8989;
+  border-color: #2c2929;
+}
+
+.opciones {
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+  background: rgba(229, 224, 224, 0.82);
+  margin-left: 700px;
+  margin-right: 700px;
+  border-radius: 30px;
+}
+
+.editar {
+  width:75px;
+  height: 40px;
+  background-color: #f3e22d;
+  border-radius: 5px;
+  border-color: #f3e22d;
+}
+
+.eliminar {
+  width:95px;
+  height: 40px;
+  background-color: #f63434;
+  border-radius: 5px;
+  border-color: #f63434;
+}

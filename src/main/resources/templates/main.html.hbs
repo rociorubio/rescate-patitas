@@ -1,0 +1,60 @@
+{{# partial "titulo" }}
+<title>RescateDePatitas.com | Home</title>
+{{/partial}}
+
+{{# partial "contenido" }}
+  <div class="columnas">
+    <div style="margin-right:175px">
+        <h1>Rescate de patitas</h1>
+        <p style="text-align: justify;">Debido a la creciente conciencia social que se está
+            tomando sobre el cuidado de las mascotas y de
+            animales en general, muchas Asociaciones se
+            encargan de cuidarlos y de hacer respetar sus
+            derechos. La atención y el cuidado abarca desde la
+            ayuda para encontrar mascotas perdidas, la
+            facilitación y difusión de mascotas que están en
+            adopción, hasta la búsqueda y el encuentro de
+            hogares de tránsito para mascotas que no pueden
+            quedarse en los hogares de los rescatistas.<br>
+            Aquí es donde nace RescataDePatitas.com!</p>
+
+    </div>
+    <div>
+      <img src="https://www.nicepng.com/png/detail/289-2899988_perros-y-gatos-png-royal-canin-perros-y.png" style="margin-right:25px;">
+    </div>
+  </div>
+    <div style="display:flex;margin-top:50px;justify-content:space-evenly">
+        <div>
+            <div class="orden-boton">
+                <button class="redondo" onclick="window.location.href='/mascotas/nueva';">
+                <b style="font-size:40px;">I</b>
+                </button>
+            </div>
+            <b style="font-size:30px;">Quiero ingresar a mi mascota</b>
+        </div>
+        <div style="margin-left:50px">
+            <div class="orden-boton">
+            <button class="redondo">
+                <b style="font-size:40px;">A</b>
+            </button>
+            </div>
+            <b style="font-size:30px;">Quiero dar en adopción a mi mascota</b>
+        </div>
+	</div>
+    <div style="display:flex;margin-top:100px;align-items:left">
+        <img align="left" src="https://www.hogarmania.com/archivos/201910/mascota-perdida-XxXx80.jpg" width="500" height="300" style="margin-left:25px;width:800px;height:500px;">
+        <div>
+            <h2>He encontrado una mascota!</h2>
+            <p> Si usted ha encontrado una mascota perdida, y quiere anunciarlo para encontrar a su dueño lo antes posible, por favor ingrese todos los datos necesarios ingresando al siguiente botón.</p>
+              <div>
+              <a href="/mascotas/encontrada">
+                <button class="boton naranja">
+                  <b style="font-size:25px;">Cargar datos</b>
+                </button>
+              </a>
+              </div>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.html.hbs }}

@@ -1,0 +1,94 @@
+{{# partial "titulo" }}
+    <title>RescateDePatitas.com | Mascota Encontrada</title>
+{{/partial}}
+
+{{# partial "contenido" }}
+
+  <h1 style="color:#2869D5;font-size:70px">Encontré una mascota</h1>
+  <div class="formulario">
+  <form class="form" action="/mascotas/encontrada" method="post">
+
+    <p style="font-size:200%;color:#EC7D08;">Datos del Rescatista</p>
+
+        <label><b>Nombre:</b></label>
+        <input name="nombreRescatista" placeholder="Ingrese su nombre" type="text">
+        <label><b>Apellido:</b></label>
+        <input name="apellidoRescatista" placeholder="Ingrese su apellido" type="text">
+        <label><b>Fecha de nacimiento:</b></label>
+        <input name="fechnac" placeholder="Ingrese su fecha de nac" type="date">
+        <label><b>Tipo y Número de Documento:</b></label>
+        <select name="tipodni">
+          <option>DNI</option>
+          <option>PASAPORTE</option>
+          <option>LIBRETA CIVICA</option>
+        </select>
+        <input name="numDoc" placeholder="Ingrese número de doc" type="text">
+
+
+    <p style="font-size:200%;color:#EC7D08;">Direccion</p>
+
+        <label><b>Calle:</b></label>
+        <input name="calle" placeholder="Ingrese su calle" type="text">
+        <label><b>Altura:</b></label>
+        <input name="altura" placeholder="Ingrese su altura" type="text">
+        <label><b>Piso/Dto:</b></label>
+        <input name="pisodpto" placeholder="Ingrese su piso/dto" type="text">
+        <br></br>
+        <label><b>Localidad:</b></label>
+        <input name="localidad" placeholder="Ingrese su localidad" type="text">
+        <label><b>Provincia:</b></label>
+        <input name="provincia" placeholder="Ingrese su provincia" type="text">
+
+    <p style="font-size:200%;color:#EC7D08;">Contacto</p>
+
+      <label><b>Nombre</b></label>
+      <input name="nombreContacto" placeholder="Ingrese nombre" type="text">
+      <label><b>Apellido</b></label>
+      <input name="apellidoContacto" placeholder="Ingrese apellido" type="text">
+      <label><b>Teléfono:</b></label>
+      <input name="telefonoContacto" placeholder="Ingrese telefono" type="text">
+      <br></br>
+      <label><b>Email:</b></label>
+      <input name="emailContacto" placeholder="Ingrese el email" type="text">
+      <br></br>
+
+  <p style="font-size:200%;color:#EC7D08;">Datos de la mascota encontrada:</p>
+
+      <label><i class="fas fa-camera" style="color:black;"></i><b> Fotos:</b> <input type="file" name="imagen" style="align-content: center;"></label>
+      <label><b>Tipo:</b></label>
+        <select name="tipoDeMascota">
+            <option>Perro</option>
+            <option>Gato</option>
+        </select>
+        <label><b>Tamaño:</b></label>
+            <select name="tamanioMascota">
+              <option>Chico</option>
+              <option>Mediano</option>
+              <option>Grande</option>
+            </select>
+      <label><b>Descripcion:</b></label>
+      <textarea name="descripcion" rows="10" cols="60">Escribe aquí tus comentarios</textarea>
+      <br></br>
+      <label><b>Lugar donde fue encontrado/a:</b></label>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.823331088444!2d-58.46948624897265!3d-34.659164380349246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9a785a9f899%3A0x5bbe2853d5d182f4!2sBicicleta%20UTN.%20BA!5e0!3m2!1ses-419!2sar!4v1637093284666!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <br></br>
+      <label><b>Fue encontrado con chapita?</b></label>
+      <select name="chapita">
+         <option value="1">SI</option>
+         <option value="2">NO</option>
+      </select>
+
+      <input name="numChapita" placeholder="Ingrese el numero de la chapita" type="text">
+
+    <button class="btn guardar" style="margin-left:1200px;">
+      <b>Guardar</b>
+    </button>
+
+  </form>
+  <br></br>
+  <br></br>
+</div>
+{{/partial}}
+
+{{> layout.html.hbs }}
+

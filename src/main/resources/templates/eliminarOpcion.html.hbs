@@ -1,0 +1,31 @@
+{{# partial "titulo"}}
+  <title>RescateDePatitas.com | Eliminar Característica</title>
+{{/partial}}
+
+{{# partial "contenido"}}
+    <h1>Eliminar Opcion <b style="color:#EC7D08">{{opcion.opcion}}</b></h1>
+    <br></br>
+  <div style="position:relative; justify-content: center;margin-left:500px;margin-right:500px;background: rgba(229, 224, 224, 0.82);border-radius:15px">
+
+                <div class="modal-body">
+                    <p>Estás a punto de eliminar la opción <b>{{opcion.opcion}}</b><p>
+                    <p>¿Estás seguro?</p>
+                <div style="margin-left:500px;">
+                  <a href="caracteristicas/{{caracteristica.idCaracteristica}}">
+                    <button type="button" class="rechazar" data-dismiss="modal">NO</button>
+                  </a>
+                  <a href="/caracteristicas/{{caracteristica.idCaracteristica}}/opcion/{{opcion.idOpcion}}/eliminar/si">
+                    <button type="button" class="aceptar" data-dismiss="modal">SI</button>
+                  </a>
+                </div>
+                </div>
+  </div>
+  <br></br>
+  <br></br><br></br>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+{{/partial}}
+
+{{> layoutAdmin.html.hbs }}

@@ -1,0 +1,32 @@
+{{# partial "titulo" }}
+  <title>RescateDePatitas.com | Inicio de Sesión</title>
+{{/partial}}
+
+{{# partial "contenido" }}
+  <div class="login">
+  <br></br>
+          <form action="/login" method="post">
+            <div class="sesion">
+                <input name="username" placeholder=" Ingrese nombre de usuario" type="text">
+                <br></br>
+                <input name="password" placeholder=" Ingrese password" type="password">
+                <br></br>
+            </div>
+
+            <input type="submit" value="Entrar" class="btn btn-primary" style="width: 450px;height: 50px;font-family:"Verdana", sans-serif;">
+          </form>
+      <br>
+        <a href="/home">¿Has olvidado tu contraseña?</a>
+      </br>
+      <hr style="color:black;" width=400>
+      <a href="/usuario/nuevo">
+      <button type="button" class="btn btn-warning">Crear cuenta nueva</button>
+      </a>
+  <br></br>
+  </div>
+  <br></br>
+  <br></br>
+  <br></br>
+{{/partial}}
+
+{{> layout.html.hbs }}

@@ -1,0 +1,51 @@
+{{# partial "titulo"}}
+  <title>RescateDePatitas.com | Editar Característica</title>
+{{/partial}}
+
+{{# partial "contenido"}}
+<div>
+  <div>
+    <h1 style="color:#2869D5; font-size:70px;">Característica <b style="color:#EC7D08">{{caracteristica.nombre}}</b></h1>
+  </div>
+
+    <div style="position:relative; justify-content: center;margin-left:700px">
+
+       <a href="/caracteristicas/{{caracteristica.idCaracteristica}}/opcion/nueva">
+          <button type="button" class="btn btn-primary" data-target="#exampleModal" style="margin-left: 750px">
+            Agregar Opción
+          </button>
+       </a>
+  </div>
+
+  <div class="caractBody">
+    <form>
+      <label><b>Buscar Opción:</b></label>
+      <input name="opcionBuscada" placeholder="Busque su caracteristica" type="text" style="width:250px;">
+      <input type="submit" value="Buscar">
+    </form>
+</div>
+
+<!--Hacer el if de las Caracteristicas libre-->
+<div style="margin-left: 700px" >
+<br></br>
+  <table style="margin:15px;height:20px;border-collapse:separate;text-align:center;" width="50%">
+    {{#opciones}}
+    <tr style="background-color: #f2f2f2">
+      <td><b>{{opcion}}</b></td>
+      <td style="align-items:center;"><a href="/caracteristicas/{{caracteristica.idCaracteristica}}/opcion/{{idOpcion}}"><input type="submit" value="Editar" class="editar"></a></td>
+      <td><a href="/caracteristicas/{{caracteristica.idCaracteristica}}/opcion/{{idOpcion}}/eliminar"><input type="submit" value="Eliminar" class="eliminar"></a></td>
+    </tr>
+    {{/opciones}}
+
+  </table>
+</div>
+<br></br>
+<br></br>
+<br></br>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+{{/partial}}
+
+{{> layoutAdmin.html.hbs }}

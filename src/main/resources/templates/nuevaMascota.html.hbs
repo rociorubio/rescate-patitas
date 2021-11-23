@@ -1,0 +1,88 @@
+{{# partial "titulo" }}
+  <title>RescateDePatitas.com | Ingresar Mascota</title>
+{{/partial}}
+
+{{# partial "contenido" }}
+  <h1 style="color:#2869D5;font-size:70px">Registrar a mi mascota</h1>
+ <div class="formulario">
+  <form class="form" action="/mascotas/nueva"  method="post">
+    <p style="font-size:200%;color:#EC7D08;">Datos del dueño</p>
+
+    <label><b>Nombre:</b></label>
+    <input name="nombreDuenio" placeholder="Ingrese su nombre" type="text">
+    <label><b>Apellido:</b></label>
+    <input name="apellidoDuenio" placeholder="Ingrese su apellido" type="text">
+    <label><b>Fecha de nacimiento:</b></label>
+    <input name="fecnac" placeholder="Ingrese su fecha de nac" type="date">
+    <br></br>
+    <label><b>Tipo y Número de Documento:</b></label>
+    <select name="tipoDoc">
+
+      <option>DNI</option>
+      <option>PASAPORTE</option>
+      <option>LIBRETA CIVICA</option>
+    </select>
+    <input name="nrodoc" placeholder="Ingrese número de doc" type="text">
+    <br></br>
+
+    <p style="font-size:200%;color:#EC7D08;">Contacto</p>
+
+    <label><b>Nombre y apellido :</b></label>
+    <input name="nombreApellidoContacto" placeholder="Ingrese su nombre" type="text">
+    <label><b>Telefono:</b></label>
+    <input name="telefono" placeholder="Ingrese su telefono" type="text">
+    <br></br>
+    <label><b>Mail:</b></label>
+    <input name="mail" placeholder="Ingrese su mail" type="text">
+
+    <br></br>
+
+    <p style="font-size:200%;color:#EC7D08;">Datos de Mascota</p>
+
+      <label><b>Tipo:</b></label>
+      <select name="tipoDeMascota">
+        <option>Perro</option>
+        <option>Gato</option>
+      </select>
+      <label><b>Nombre:</b></label>
+      <input name="nombreMascota" placeholder="Ingrese nombre" type="text">
+      <label><b>Apodo:</b></label>
+      <input name="apodoMascota" placeholder="Ingrese el apodo" type="text">
+      <br></br>
+      <label><b>Edad:</b></label>
+      <input name="edadMascota" placeholder="Ingrese la edad" type="text">
+      <label><b>Sexo:</b></label>
+      <select name="sexoMascota">
+        <option>Hembra</option>
+        <option>Macho</option>
+       </select>
+      <br></br>
+      <p style="font-size:200%;color:#EC7D08;">Características </p>
+      <br></br>
+
+          {{#caracteristicas}}
+          <label><b>{{nombre}}</b></label>
+            {{#if opciones}}
+              <select name="{{opcion}}">
+                {{#opciones}}
+                  <option>{{opcion}}</option>
+                {{/opciones}}
+              </select>
+            {{else}}
+              </label><input name="opcionLibre" placeholder="Ingrese características de tu mascota" type="text">
+            {{/if}}
+            <br></br>
+          {{/caracteristicas}}
+
+
+
+      <a href="/home">
+        <button class="btn guardar">
+          <b>Guardar</b>
+        </button>
+      </a>
+      </form>
+      <br></br>
+{{/partial}}
+
+{{> layout.html.hbs }}
